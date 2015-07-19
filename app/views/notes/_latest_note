@@ -1,0 +1,11 @@
+
+
+
+<div class="latest_note">
+<h2><%= @latest_note.title %></h2>
+
+<p>
+<%= @latest_note.body %>
+</p>
+<small>Written on <%= @latest_note.created_at.strftime("%m/%d/%Y")  %> by <%= User.find(@latest_note.user_id).email %></small>
+</div>
