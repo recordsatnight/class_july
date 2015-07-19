@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <div class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown trigger
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <li><%= link_to('Home', root_path) %></li>
+    <li><%= link_to('About', main_about_path) %></li>
+    <li><%= link_to('Contact', main_contact_path) %></li>
+  </ul>
+</div>
+
+<%= yield %>
+   <div class="contact">Contact form</div>
+<div class="footer">
+  <div class="col-sm-4"><a href="/">Home</a></div>
+  <div class="col-sm-4"><a href="/main/about">About</a></div>
+  <div class="col-sm-4"><a href="/main/contact">Contact</a></div>
+
+</div>
+</body>
+</html>

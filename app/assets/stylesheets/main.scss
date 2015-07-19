@@ -1,0 +1,62 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.hero {
+    height: 720px;
+    background-color: #3879D9;
+    background-image: url("http://www.brailleskateboarding.com/wp-content/uploads/2014/01/KICKFLIP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 7%;
+    margin: 0 0 50px 0;
+    h1 {
+        color: #fff;
+        font-size: 54px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.copy {
+    margin: 50px;
+    img {
+        width: 100%;
+    }
+}
+
+.contact {
+    text-align: center;
+}
+
+.footer {
+    margin: 50px;
+    text-align: center;
+}
+
+.long-content {
+    span {
+        display: none;
+    }
+}
