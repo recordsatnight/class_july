@@ -10,18 +10,20 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br>
+<form class="form-inline">
+  <div class="form-group">
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
-    <%= f.label :body %><br>
+  <div class="form-group">
+    <%= f.label :body %>
     <%= f.text_area :body %>
   </div>
  
   <div class="actions">
     <%= f.hidden_field :user_id, :value => current_user.id %>
-    <%= f.submit %>
+    <%= f.submit 'name of button here', :class => 'btn btn-default' %>
   </div>
+  </form>
+
 <% end %>
